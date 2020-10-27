@@ -10,30 +10,160 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            body
-            {
-                background-color: gray;
-            }
-            h1
-            {
-                text-align:center;
-            }
-            h2
-            {
-               text-align:center; 
-            }
-            p
-            {
-                text-align:center;
-                font-size:25px;
-            }
+        body {
+            margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+        }
+        .first {
+            width: 1600px;
+            height: 210px;
+            top: 0px;
+            left: 0px;
+            background-color: #313C4E;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+        }
+        .resume {
+            width: 900px;
+            height: 200px;
+            position: absolute;
+        }
+        .img {
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            top: 20px;
+            left: 1100px;
+        }
+        .resume {
+            color: white;
+        }
+        .st1 {
+            color: #50868E;
+        }
+        .zag {
+            text-decoration: underline;
+            color: #50868E;
+        }
+        .second {
+            background-color: #222B34;
+            width: 1600px;
+            height: 150px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            color: white;
+        }
+        .sec1 {
+            width: 300px;
+            height: 150px;
+            position: absolute;
+            top: 200px;
+            left: 140px;
+        }
+        .sec2 {
+            width: 300px;
+            height: 150px;
+            position: absolute;
+            top: 200px;
+            left: 700px;
+        }
+        .left {
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            top: 360px;
+            left: 140px;
+        }
+        .right {
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            top: 360px;
+            left: 800px;
+        }
         </style>
     </head>
-    <body bgcolor="#666699">
-        <h1>My resume</h1>
-        <h2>
-            <img src="resume(Drygha.M.).jpg" alt="resume">
-        </h2>
+    <body>
+        <div class="wrapp">
+    <section class="first">
+        <div class="resume">
+        <h1>Mykhailo Drygha</h1>
+        <h3 class="st1">Student/beginner programmer</h2>
+        <p>I know how to process photos 
+           professionally and I have a good level of programming</p>
+        </div>
+        <div class="img">
+            <img src="photo_1.jpg">
+        </div>
+    </section>
+    <section class="second">
+        <div class="sec1">
+        <div>
+            <p>misadryga@gmail.com</p>
+        </div>
+        <div>
+            <p>Cherkasy,Ukraine</p>
+        </div>
+        <div>
+            <p>github.com/MishaDryga</p>
+        </div>
+        </div>
+        <div class="sec2">
+        <div>
+            <p>+380985103406</p>
+        </div>
+        <div>
+            <p>30 January,2002</p>
+        </div>
+        </div>
+    </section>
+    <section class="left">
+        <h2 class="zag">EDUCATION</h2>
+        <div class="full">
+            <p>Full secondary education:</p>
+            <p>Cherkasy Physics and Mathematics Lyceum<br>(FIMLY)</p>
+        </div>
+        <div class="Bach">
+            <p>Bachelor:</p>
+            <p>Taras Shevchenko National University of Kyiv /<br>
+                Faculty of Information Technologies
+            </p>
+        </div>
+    </section>
+    <section class="right">
+        <div class="skills">
+        <h2 class="zag">SKILLS</h2>
+        <p>C++,HTML5, CSS, JavaScript, Phyton,<br>
+        AdobePhotoshop, AdobInstaller, Blender 3D.</p>
+        </div>
+        <div class="org">
+            <h2 class="zag">ORGANIZATIONS</h2>
+            <p>Network and Internet technologies (09/2019-Present)</p>
+        </div>
+        <div class="cer">
+            <h2 class="zag">CERTIFICATES</h2>
+            <p>CCNA-1(Cisco NetAcad)(09/2019-Present</p>
+        </div>
+        <div>
+            <h2 class="zag">LANGUAGES</h2>
+            <ul>
+                <li>Ukrainian</li>
+                <li>Russian</li>
+                <li>English</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="zag">INTERESTS</h2>
+            <p>GameDev, technology</p>
+        </div>
+    </section>
+    </div>
         <p>
             <a href="../index.html">Home</a>
         </p>
