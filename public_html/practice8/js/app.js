@@ -3,8 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-const Firstname = document.getElementById("firstnam");
-const Firstnam = document.getElementById("firstname");
+const Firstname = document.getElementById("firstname");
 const Imag = document.getElementById("image");
 const Email = document.getElementById("mail");
 let num = 1;
@@ -24,7 +23,7 @@ Firstname.onclick = function(){
     }
     else{
         if(num >= 12)num = 1; else num++;
-        $ajaxUtils.sendGetRequest("https://reqres.in/api/users/"+num,function(response){
+        $ajaxUtils.sendGetRequest("https://webdesognfor.herokuapp.com/users/"+num,function(response){
             const json =  JSON.parse(response.responseText);
             Firstname.innerText = json.data.first_name +" "+ json.data.last_name;
             Firstnam.innerText = json.data.first_name +" "+ json.data.last_name;
